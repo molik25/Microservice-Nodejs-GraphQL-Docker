@@ -1,1 +1,1 @@
-# Microservice-with-GraphQL-Docker
+# Microservice-Nodejs-GraphQL-Docker
