@@ -4,11 +4,9 @@ const axios = require('axios');
 
 const router = express.Router();
 
+// ** get api
 router.post('/', async (req, res) => {
     const { productId, quantity } = req.body;
-
-    console.log(req.body, "req.body");
-
     // Check product availability
     try {
         const productResponse = await axios.get(`http://localhost:8001/api/products/${productId}`);
