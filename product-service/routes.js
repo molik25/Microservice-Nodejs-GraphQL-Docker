@@ -10,9 +10,6 @@ router.get('/', async (req, res) => {
 
 // New route to get a product by ID
 router.get('/:id', async (req, res) => {
-
-    console.log(req.params.id , "req.params.id" )
-
     const product = await Product.findById(req.params.id);
 
      if (!product) {
