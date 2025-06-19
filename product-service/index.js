@@ -16,8 +16,6 @@ mongoose.connect(dbUri, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('MongoDB connected'))
   .catch(err => console.error('MongoDB connection error:', err));
 
-// app.use('/api/products', routes);
-
 // app.listen(4001, () => {
 //     console.log('Product Service running on port 4001');
 // });
